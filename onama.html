@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cherry Queen - O nama</title>
+    <link rel="icon" type="image/png" href="slike/logoKrunaT.png" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="slike/logoKrunaT2.png" alt="Logo" class="logo-img" />
+          Cherry Queen
+        </div>
+        <ul class="nav-links">
+          <li class="hideOnMobile"><a href="index.html">Početna</a></li>
+          <li class="hideOnMobile"><a href="onama.html">O nama</a></li>
+          <li class="hideOnMobile"><a href="galerija.html">Galerija</a></li>
+          <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="desktopActions hideOnMobile">
+          <a href="onama-en.html" class="flag-link">
+            <img
+              src="slike/lang/Flag_of_the_United_Kingdom_(2-3).svg.png"
+              alt="Srpski"
+            />
+          </a>
+          <a
+            href="kontakt.html"
+            class="button"
+            style="
+              display: inline-block;
+              padding: 12px 24px;
+              background: #85c7de;
+              color: white;
+              font-weight: 600;
+              border-radius: 30px;
+              text-decoration: none;
+              transition: 0.3s;
+              margin-left: 15px;
+            "
+          >
+            Rezerviši odmah
+          </a>
+        </div>
+
+        <!-- Mobile hamburger + mobile flag -->
+        <div class="mobileActions hideOnDesktop">
+          <a href="onama-en.html" class="flag-link">
+            <img
+              src="slike/lang/Flag_of_the_United_Kingdom_(2-3).svg.png"
+              alt="Srpski"
+            />
+          </a>
+          <div
+            class="hamburger"
+            onclick="toggleMenu()"
+            style="margin-left: 15px"
+          >
+            ☰
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile slide-in menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <span class="close-btn" onclick="toggleMenu()">✕</span>
+        <a href="index.html">Početna</a>
+        <a href="onama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="kontakt.html" class="button"> Rezerviši odmah </a>
+      </div>
+      <script>
+        function toggleMenu() {
+          document.getElementById("mobileMenu").classList.toggle("show");
+        }
+      </script>
+
+      <header class="hero">
+        <div class="hero-grid">
+          <div class="hero-text" style="margin-bottom: -200px">
+            <h1>O nama</h1>
+            <p>
+              Cherry Queen apartman se nalazi u srcu Beograda i idealan je za
+              goste koji žele spoj udobnosti i savršene lokacije. Može ugostiti
+              maksimalno tri osobe i sadrži jednu spavaću sobu.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <header class="hero">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h2>Sadržaj:</h2>
+            <ul style="margin-left: 20px; margin-top: -20px">
+              <li>sopstveno kupatilo</li>
+              <li>parking (u blizini uz prethodnu rezervaciju i doplatu)</li>
+              <li>WiFi</li>
+              <li>klima-uređaj</li>
+              <li>TV</li>
+              <li>kuhinja</li>
+              <li>pegla</li>
+              <li>prevoz od/do aerodroma (uz doplatu)</li>
+              <li>pristup objektu dostupan stepenicama</li>
+            </ul>
+            <h3>Dnevni boravak i spavaća soba</h3>
+            <ul style="margin-left: 20px; margin-top: -20px">
+              <li>bračni krevet</li>
+              <li>krevet za jednu osobu</li>
+              <li>sto za ručavanje</li>
+              <li>radni sto</li>
+            </ul>
+            <h3>Kuhinja</h3>
+            <ul style="margin-left: 20px; margin-top: -20px">
+              <li>toster</li>
+              <li>ploča za kuvanje</li>
+              <li>mikrotalasna rerna</li>
+              <li>kuvalo</li>
+              <li>frižider</li>
+              <li>kafa</li>
+              <li>kompletno posuđe</li>
+            </ul>
+            <h3>Kupatilo</h3>
+            <ul style="margin-left: 20px; margin-top: -20px">
+              <li>peškiri</li>
+              <li>toalet papir</li>
+              <li>tuš</li>
+              <li>fen za kosu</li>
+              <li>toaletni pribor</li>
+            </ul>
+          </div>
+          <div class="hero-text-onama">
+            <h2>Atrakcije u blizini:</h2>
+            <ul style="margin-left: 20px; margin-top: -20px">
+              <li>Hram Svetog Save (280 m)</li>
+              <li>Muzej Nikole Tesle (700 m)</li>
+              <li>Muzej anatomije (850 m)</li>
+              <li>Muzej iluzija (1.9 km)</li>
+              <li>Narodni muzej (2.1 km)</li>
+              <li>Trg republike (2.1 km)</li>
+              <li>Beograd na vodi (2.1 km)</li>
+              <li>Skadarlija (2.3 km)</li>
+              <li>Kuća cveća - mauzolej Josipa Broza Tita (2.4 km)</li>
+              <li>Beogradska tvrđava - Kalemegdan (3.1 km)</li>
+            </ul>
+            <h3>Kafići i restorani</h3>
+            <ul style="margin-left: 20px; margin-top: -20px">
+              <li>Kašika - gotova jela (140 m)</li>
+              <li>poslastičarnica Fenisa (150 m)</li>
+              <li>Pizza Bar (400 m)</li>
+              <li>Intergalactic Diner (750 m)</li>
+              <li>Le Petit Bistro (750 m)</li>
+              <li>The View Rooftop restaurant (800 m)</li>
+              <li>Voulez-Vous (1.4 km)</li>
+            </ul>
+            <h3>Aerodrom</h3>
+            <ul style="margin-left: 20px; margin-top: -20px">
+              <li>Aerodrom Nikola Tesla (13 km)</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="cr">
+        <div class="socials" style="margin-top: -50px">
+          <a
+            href="https://www.instagram.com/apartmentcherryqueen/"
+            target="blank"
+            ;
+            ><img src="slike/Instagram_logo_2022.svg.webp"
+          /></a>
+          <a
+            href="https://www.booking.com/hotel/rs/apartment-cherry-queen.html"
+            target="blank"
+            ;
+            ><img src="slike/Booking.com_Icon_2022.svg"
+          /></a>
+          <a href="https://www.airbnb.com/rooms/19803985" target="blank" ;
+            ><img src="slike/airbnb_icon_131000.png"
+          /></a>
+        </div>
+        <p class="copyr">
+          &copy; 2025 Cherry Queen Apartman | Kneginje Zorke 18, Beograd
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

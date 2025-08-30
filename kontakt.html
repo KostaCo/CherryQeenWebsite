@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cherry Queen - Kontakt</title>
+    <link rel="icon" type="image/png" href="slike/logoKrunaT.png" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="slike/logoKrunaT2.png" alt="Logo" class="logo-img" />
+          Cherry Queen
+        </div>
+        <ul class="nav-links">
+          <li class="hideOnMobile"><a href="index.html">Početna</a></li>
+          <li class="hideOnMobile"><a href="onama.html">O nama</a></li>
+          <li class="hideOnMobile"><a href="galerija.html">Galerija</a></li>
+          <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="desktopActions hideOnMobile">
+          <a href="kontakt-en.html" class="flag-link">
+            <img
+              src="slike/lang/Flag_of_the_United_Kingdom_(2-3).svg.png"
+              alt="Srpski"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile hamburger + mobile flag -->
+        <div class="mobileActions hideOnDesktop">
+          <a href="kontakt-en.html" class="flag-link">
+            <img
+              src="slike/lang/Flag_of_the_United_Kingdom_(2-3).svg.png"
+              alt="Srpski"
+            />
+          </a>
+          <div
+            class="hamburger"
+            onclick="toggleMenu()"
+            style="margin-left: 15px"
+          >
+            ☰
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile slide-in menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <span class="close-btn" onclick="toggleMenu()">✕</span>
+        <a href="index.html">Početna</a>
+        <a href="onama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <script>
+        function toggleMenu() {
+          document.getElementById("mobileMenu").classList.toggle("show");
+        }
+      </script>
+
+      <header class="hero">
+        <div class="hero-grid">
+          <div class="hero-text-kontakt">
+            <h1>Kontakt</h1>
+            <h2>Kontaktirajte nas:</h2>
+            <p>
+              Adresa: <br />
+              Kneginje Zorke 18, Beograd
+            </p>
+            <p>
+              Telefon 1: +381 64 820 2020<br />
+              Telefon 2: +381 64 221 8601
+            </p>
+            <p>Email: danijelacolovic@gmail.com</p>
+          </div>
+
+          <div class="kontakt-forma">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/meolewqd"
+              method="POST"
+            >
+              <label for="ime">Ime i prezime:</label>
+              <input type="text" id="ime" name="ime" required />
+
+              <label for="email">Email adresa:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="poruka">Poruka:</label>
+              <textarea id="poruka" name="poruka" rows="5" required></textarea>
+
+              <button type="submit">Pošalji</button>
+            </form>
+            <p id="form-status"></p>
+          </div>
+        </div>
+      </header>
+
+      <script>
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const data = new FormData(form);
+          try {
+            let response = await fetch(form.action, {
+              method: form.method,
+              body: data,
+              headers: { Accept: "application/json" },
+            });
+            if (response.ok) {
+              status.innerHTML = "✅ Hvala, poruka je poslata!";
+              form.reset();
+            } else {
+              status.innerHTML = "❌ Došlo je do greške, pokušajte ponovo.";
+            }
+          } catch (error) {
+            status.innerHTML = "⚠️ Problem sa mrežom!";
+          }
+        });
+      </script>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.0370155219134!2d20.466023676238013!3d44.80043427107097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a710061b3ec15%3A0xc98a3bdfb34d9e48!2sCherry%20Queen%20Apartment!5e0!3m2!1sen!2srs!4v1756453049699!5m2!1sen!2srs"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="socials-kontakt">
+        <a
+          href="https://www.instagram.com/apartmentcherryqueen/"
+          target="blank"
+          ;
+          ><img src="slike/Instagram_logo_2022.svg.webp"
+        /></a>
+        <a
+          href="https://www.booking.com/hotel/rs/apartment-cherry-queen.html"
+          target="blank"
+          ;
+          ><img src="slike/Booking.com_Icon_2022.svg"
+        /></a>
+        <a href="https://www.airbnb.com/rooms/19803985" target="blank" ;
+          ><img src="slike/airbnb_icon_131000.png"
+        /></a>
+      </div>
+
+      <div class="cr">
+        <p class="copyr">
+          &copy; 2025 Cherry Queen Apartman | Kneginje Zorke 18, Beograd
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cherry Queen - Gallery</title>
+    <link rel="icon" type="image/png" href="slike/logoKrunaT.png" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="slike/logoKrunaT2.png" alt="Logo" class="logo-img" />
+          Cherry Queen
+        </div>
+        <ul class="nav-links">
+          <li class="hideOnMobile"><a href="index-en.html">Home</a></li>
+          <li class="hideOnMobile"><a href="onama-en.html">About us</a></li>
+          <li class="hideOnMobile"><a href="galerija-en.html">Gallery</a></li>
+          <li class="hideOnMobile"><a href="kontakt-en.html">Contact</a></li>
+        </ul>
+        <div class="desktopActions hideOnMobile">
+          <a href="galerija.html" class="flag-link">
+            <img src="slike/lang/Flag_of_Serbia.svg.png" alt="Srpski" />
+          </a>
+          <a
+            href="kontakt-en.html"
+            class="button"
+            style="
+              display: inline-block;
+              padding: 12px 24px;
+              background: #85c7de;
+              color: white;
+              font-weight: 600;
+              border-radius: 30px;
+              text-decoration: none;
+              transition: 0.3s;
+              margin-left: 18px;
+            "
+          >
+            Book Now
+          </a>
+        </div>
+
+        <!-- Mobile hamburger + mobile flag -->
+        <div class="mobileActions hideOnDesktop">
+          <a href="galerija.html" class="flag-link">
+            <img src="slike/lang/Flag_of_Serbia.svg.png" alt="Srpski" />
+          </a>
+          <div
+            class="hamburger"
+            onclick="toggleMenu()"
+            style="margin-left: 18px"
+          >
+            ☰
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile slide-in menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <span class="close-btn" onclick="toggleMenu()">✕</span>
+        <a href="index-en.html">Home</a>
+        <a href="onama-en.html">About Us</a>
+        <a href="galerija-en.html">Gallery</a>
+        <a href="kontakt-en.html">Contact</a>
+        <a href="kontakt-en.html" target="_blank" class="button"> Book Now </a>
+      </div>
+      <script>
+        function toggleMenu() {
+          document.getElementById("mobileMenu").classList.toggle("show");
+        }
+      </script>
+
+      <header class="hero-galerija">
+        <div class="hero-grid-galerija">
+          <div class="hero-images-galerija">
+            <img
+              src="slike/soba/20170723_124247-01.jpeg"
+              alt="Slika 1"
+              style="height: 500px"
+            />
+            <img
+              src="slike/soba/20170724_163309-01.jpeg"
+              alt="Slika 2"
+              style="height: 700px"
+            />
+            <img
+              src="slike/soba/20170724_164715-01.jpeg"
+              alt="Slika 6"
+              style="height: 700px; margin-top: 250px"
+            />
+            <img
+              src="slike/soba/20170724_164521-01.jpeg"
+              alt="Slika 4"
+              style="margin-top: 700px; height: 800px"
+            />
+            <img
+              src="slike/soba/20170724_164558-01.jpeg"
+              alt="Slika 5"
+              style="margin-top: 180px; height: 560px"
+            />
+            <img
+              src="slike/soba/IMG_20171006_142241_173.jpg"
+              alt="Slika 3"
+              style="height: 500px"
+            />
+            <img
+              src="slike/soba/20170724_165059-01.jpeg"
+              alt="Slika 7"
+              style="margin-top: -760px; height: 1200px"
+            />
+            <img
+              src="slike/soba/20170724_165849-01.jpeg"
+              alt="Slika 8"
+              style="height: 500px"
+            />
+            <img
+              src="slike/hodnik/20170724_163145-01.jpeg"
+              alt="Slika 10"
+              style="height: 1100px; margin-top: -60px"
+            />
+            <img
+              src="slike/kupatilo/20170723_125347-01.jpeg"
+              alt="Slika 10"
+              style="height: 1100px; margin-top: -540px"
+            />
+            <img
+              src="slike/kupatilo/20170723_125643-01.jpeg"
+              alt="Slika 10"
+              style="height: 900px"
+            />
+            <img
+              src="slike/kupatilo/20170724_165152-01.jpeg"
+              alt="Slika 10"
+              style="height: 1500px; margin-top: -340px"
+            />
+            <img
+              src="slike/kupatilo/20170724_165307-01.jpeg"
+              alt="Slika 10"
+              style="height: 1250px"
+            />
+            <img
+              src="slike/kuhinja/20170723_131209-01.jpeg"
+              alt="Slika 10"
+              style="height: 400px; margin-top: -90px"
+            />
+            <img
+              src="slike/kuhinja/20170723_131819-01.jpeg"
+              alt="Slika 10"
+              style="height: 500px"
+            />
+            <img
+              src="slike/kuhinja/20170724_164301-01.jpeg"
+              alt="Slika 10"
+              style="height: 700px; margin-top: -190px"
+            />
+            <img
+              src="slike/kuhinja/20170724_164318-01.jpeg"
+              alt="Slika 10"
+              style="height: 1000px"
+            />
+            <img
+              src="slike/kuhinja/20170724_164344-01.jpeg"
+              alt="Slika 10"
+              style="height: 1000px; margin-top: -490px"
+            />
+            <img
+              src="slike/kuhinja/20170724_164411-01.jpeg"
+              alt="Slika 10"
+              style="height: 513px"
+            />
+          </div>
+        </div>
+      </header>
+      <div class="cr">
+        <div class="socials" style="margin-top: 15px">
+          <a
+            href="https://www.instagram.com/apartmentcherryqueen/"
+            target="blank"
+            ;
+            ><img src="slike/Instagram_logo_2022.svg.webp"
+          /></a>
+          <a
+            href="https://www.booking.com/hotel/rs/apartment-cherry-queen.html"
+            target="blank"
+            ;
+            ><img src="slike/Booking.com_Icon_2022.svg"
+          /></a>
+          <a href="https://www.airbnb.com/rooms/19803985" target="blank" ;
+            ><img src="slike/airbnb_icon_131000.png"
+          /></a>
+        </div>
+        <p class="copyr">
+          &copy; 2025 Cherry Queen Apartment | Kneginje Zorke 18, Belgrade
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

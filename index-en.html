@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cherry Queen - Početna</title>
+    <link rel="icon" type="image/png" href="slike/logoKrunaT.png" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="slike/logoKrunaT2.png" alt="Logo" class="logo-img" />
+          Cherry Queen
+        </div>
+        <ul class="nav-links">
+          <li class="hideOnMobile"><a href="index-en.html">Home</a></li>
+          <li class="hideOnMobile"><a href="onama-en.html">About us</a></li>
+          <li class="hideOnMobile"><a href="galerija-en.html">Gallery</a></li>
+          <li class="hideOnMobile"><a href="kontakt-en.html">Contact</a></li>
+        </ul>
+
+        <div class="desktopActions hideOnMobile">
+          <a href="index.html" class="flag-link">
+            <img src="slike/lang/Flag_of_Serbia.svg.png" alt="Srpski" />
+          </a>
+          <a
+            href="kontakt-en.html"
+            class="button"
+            style="
+              display: inline-block;
+              padding: 12px 24px;
+              background: #85c7de;
+              color: white;
+              font-weight: 600;
+              border-radius: 30px;
+              text-decoration: none;
+              transition: 0.3s;
+              margin-left: 15px;
+            "
+          >
+            Book Now
+          </a>
+        </div>
+
+        <!-- Mobile hamburger + mobile flag -->
+        <div class="mobileActions hideOnDesktop">
+          <a href="index.html" class="flag-link">
+            <img src="slike/lang/Flag_of_Serbia.svg.png" alt="Srpski" />
+          </a>
+          <div
+            class="hamburger"
+            onclick="toggleMenu()"
+            style="margin-left: 15px"
+          >
+            ☰
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile slide-in menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <span class="close-btn" onclick="toggleMenu()">✕</span>
+        <a href="index-en.html">Home</a>
+        <a href="onama-en.html">About Us</a>
+        <a href="galerija-en.html">Gallery</a>
+        <a href="kontakt-en.html">Contact</a>
+        <a href="kontakt-en.html" class="button"> Book Now </a>
+      </div>
+      <script>
+        function toggleMenu() {
+          document.getElementById("mobileMenu").classList.toggle("show");
+        }
+      </script>
+      <header class="hero">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1>Cherry Queen Apartment</h1>
+            <h2>A blend of comfort and a perfect location.</h2>
+
+            <p>
+              The <strong>Cherry Queen</strong> Apartment is located in
+              <strong>Vračar</strong>, just a one-minute walk from the
+              <strong>Church of Saint Sava</strong>. With its elegant yet cozy
+              interior, it is the ideal place for a comfortable stay in
+              Belgrade, whether you are visiting for business or leisure.
+            </p>
+
+            <p>
+              Its location is perfect for exploring Belgrade. There are
+              <em>numerous cafés, shops, and restaurants</em> nearby where
+              guests can enjoy authentic local food and drinks. The airport bus
+              terminal and public transport stops are just a
+              <strong>two-minute walk away</strong>. Although centrally located,
+              the apartment faces the courtyard, allowing guests to relax in
+              peace and quiet.
+            </p>
+
+            <p>
+              The apartment is 25m<sup>2</sup>, located on the fourth floor of a
+              residential building, and can accommodate up to three people. It
+              offers Wi-Fi, air conditioning, TV and a clothes iron. The kitchen
+              is fully equipped for guests who prefer to prepare their own
+              meals. Towels and bed linen are provided. The bathroom includes a
+              shower, hairdryer, and toiletries. Private parking is available
+              upon reservation. Airport transfers can also be arranged on
+              request.
+            </p>
+
+            <h2>Why choose Cherry Queen?</h2>
+            <p>
+              Our apartment offers comfortable accommodation in the very heart
+              of the city — perfect for both relaxation and business trips.
+            </p>
+          </div>
+
+          <div class="hero-images">
+            <img src="slike/soba/20170724_164239-01.jpeg" alt="Slika 2" />
+            <img
+              src="slike/kupatilo/20170723_125347-01.jpeg"
+              alt="Slika 3"
+              style="height: 768px"
+            />
+            <img src="slike/soba/20170723_124247-01.jpeg" alt="Slika 1" />
+            <img src="slike/kuhinja/20170723_131209-01.jpeg" alt="Slika 2" />
+          </div>
+        </div>
+      </header>
+
+      <h2 class="review-h2">What our guests had to say</h2>
+      <div class="reviews">
+        <div class="review">
+          <img
+            src="slike/fern-left.png"
+            alt="Levi fern"
+            class="fern fern-left"
+          />
+
+          <div class="review-text">
+            <p>
+              „Great internet connection, and our Host kindly offered us any
+              help and airport transfer.“
+            </p>
+            <span>- Alex, UK</span>
+          </div>
+          <img
+            src="slike/fern-right.png"
+            alt="Desni fern"
+            class="fern fern-right"
+          />
+        </div>
+
+        <div class="review">
+          <img
+            src="slike/fern-left.png"
+            alt="Levi fern"
+            class="fern fern-left"
+          />
+          <div class="review-text">
+            <p>
+              „Apartment was sparkling clean, the host was easy going, AC worked
+              perfectly“
+            </p>
+            <span>- Sonia, Slovakia</span>
+          </div>
+          <img
+            src="slike/fern-right.png"
+            alt="Desni fern"
+            class="fern fern-right"
+          />
+        </div>
+
+        <div class="review">
+          <img
+            src="slike/fern-left.png"
+            alt="Levi fern"
+            class="fern fern-left"
+          />
+          <div class="review-text">
+            <p>
+              „Amazing location! Hram Svetog Save is walking distance. Super
+              clean and Danijela was very responsive whenever I had a question.“
+            </p>
+            <span>- Sonja, Canada</span>
+          </div>
+          <img
+            src="slike/fern-right.png"
+            alt="Desni fern"
+            class="fern fern-right"
+          />
+        </div>
+      </div>
+
+      <section class="ratings">
+        <div class="rating-card booking">
+          <a
+            href="https://www.booking.com/hotel/rs/apartment-cherry-queen.html"
+            target="blank"
+            ><img
+              src="slike/Booking.com_Icon_2022.svg"
+              class="rating-logo"
+              alt="Booking"
+          /></a>
+          <div class="rating-stars" style="--rating-percent: 95%"></div>
+          <div class="rating-value">9.5 <span>/ 10</span></div>
+          <p>Based on 60+ reviews</p>
+        </div>
+
+        <div class="rating-card airbnb">
+          <a href="https://www.airbnb.com/rooms/19803985" target="blank"
+            ><img
+              src="slike/airbnb_icon_131000.png"
+              class="rating-logo"
+              alt="Airbnb"
+          /></a>
+          <div class="rating-stars" style="--rating-percent: 97.2%"></div>
+          <div class="rating-value">4.86 <span>/ 5</span></div>
+          <p>Based on 50+ reviews</p>
+        </div>
+      </section>
+
+      <h2 class="review-h2">How to reach us</h2>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.0370155219134!2d20.466023676238013!3d44.80043427107097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a710061b3ec15%3A0xc98a3bdfb34d9e48!2sCherry%20Queen%20Apartment!5e0!3m2!1sen!2srs!4v1756453049699!5m2!1sen!2srs"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="cr">
+        <div class="socials">
+          <a
+            href="https://www.instagram.com/apartmentcherryqueen/"
+            target="blank"
+            ;
+            ><img src="slike/Instagram_logo_2022.svg.webp"
+          /></a>
+          <a
+            href="https://www.booking.com/hotel/rs/apartment-cherry-queen.html"
+            target="blank"
+            ;
+            ><img src="slike/Booking.com_Icon_2022.svg"
+          /></a>
+          <a href="https://www.airbnb.com/rooms/19803985" target="blank" ;
+            ><img src="slike/airbnb_icon_131000.png"
+          /></a>
+        </div>
+        <p class="copyr">
+          &copy; 2025 Cherry Queen Apartment | Kneginje Zorke 18, Belgrade
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
