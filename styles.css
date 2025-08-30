@@ -746,6 +746,24 @@ h1,h2, h3, p, address, a, div{
   }
 
   .reviews {
-    max-width: 800px !important;
+    max-width: 90%;   /* koristi manje od širine ekrana */
+    margin: 0 auto;   /* centrirano */
   }
+
+  .review {
+    padding: 10px;    /* smanji unutrašnji padding */
+    font-size: 0.9rem; /* manji font za tekst */
+  }
+  
+}
+
+@media(max-width: 600px){
+  .reviews {
+    max-width: 95%;   /* još uže na manjim ekranima */
+  }
+
+  .review {
+    font-size: 0.85rem;
+  }
+
 }
