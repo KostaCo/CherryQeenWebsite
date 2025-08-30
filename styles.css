@@ -744,4 +744,8 @@ h1,h2, h3, p, address, a, div{
   .container {
     margin: 10px !important;
   }
+
+  .reviews {
+    max-width: 800px !important;
+  }
 }
