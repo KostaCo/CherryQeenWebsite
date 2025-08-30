@@ -740,4 +740,8 @@ h1,h2, h3, p, address, a, div{
     align-items: center;
     gap: 10px;
   }
+
+  .container {
+    margin: 10px !important;
+  }
 }
